@@ -16,6 +16,8 @@ namespace Page_Navigation_App.ViewModel
         private readonly IModbusService _modbusService;
         private readonly INavigationService _navigationService;
 
+        //YAGGO
+
         // Comunicação
         private Timer _leituraTimer;
         private bool _emLeitura = false;

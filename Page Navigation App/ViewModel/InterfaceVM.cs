@@ -17,7 +17,7 @@ namespace Page_Navigation_App.ViewModel
         private readonly INavigationService _navigationService;
 
         //YAGGO Querino
-        //Anderson
+        //Anderson Viana
 
         // Comunicação
         private Timer _leituraTimer;

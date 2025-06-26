@@ -1,0 +1,575 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.Protecao"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="750"
+             d:DesignWidth="1052"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:ProtecaoVM />
+    </UserControl.DataContext>
+    
+    <Grid Margin="15">
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="419" Margin="729,32,0,0" VerticalAlignment="Top" 
+            Width="200" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF262D33" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="152" Margin="738,164,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,291,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="110" Margin="738,42,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,70,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="751,49,0,0" TextWrapping="Wrap" Text="Máxima Corrente Excitação" VerticalAlignment="Top" Width="154" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="803,70,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,121,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="803,121,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="743,100,0,0" TextWrapping="Wrap" Text="Tempo Sobrecorrente Excitação" VerticalAlignment="Top" Width="170" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,194,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="751,173,0,0" TextWrapping="Wrap" Text="Limite Corrente Excitação" VerticalAlignment="Top" Width="154" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="803,194,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,242,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="803,242,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="743,221,0,0" TextWrapping="Wrap" Text="Kp Limite Corrente Excitação" VerticalAlignment="Top" Width="170" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="803,291,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="743,270,0,0" TextWrapping="Wrap" Text="Ki Limite Corrente Excitação" VerticalAlignment="Top" Width="170" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="110" Margin="738,329,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,356,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="751,337,0,0" TextWrapping="Wrap" Text="Sense Diodo" VerticalAlignment="Top" Width="154" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="803,356,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,407,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="803,407,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="743,386,0,0" TextWrapping="Wrap" Text="Tempo Falha Diodo" VerticalAlignment="Top" Width="170" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="130" Margin="728,458,0,0" VerticalAlignment="Top" 
+            Width="200" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF262D33" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="110" Margin="738,468,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,495,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="751,473,0,0" TextWrapping="Wrap" Text="Tensão Sobre Excitação" VerticalAlignment="Top" Width="154" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="803,495,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="803,546,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="803,546,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="743,525,0,0" TextWrapping="Wrap" Text="Tempo Sobre Excitação" VerticalAlignment="Top" Width="170" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,70,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,194,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,121,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,356,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,407,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,495,0,0" TextWrapping="Wrap" Text="Vcc" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="856,546,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="164" Margin="116,34,0,0" VerticalAlignment="Top" 
+            Width="200" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF262D33" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="152" Margin="126,40,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="191,167,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="130" Margin="102,472,0,0" VerticalAlignment="Top" 
+            Width="200" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF262D33" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="110" Margin="112,482,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="178,510,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="126,489,0,0" TextWrapping="Wrap" Text="Proteção Sobretensão" VerticalAlignment="Top" Width="154" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="178,510,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="178,561,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="178,561,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="118,540,0,0" TextWrapping="Wrap" Text="Tempo de Sobretensão" VerticalAlignment="Top" Width="170" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="191,70,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="139,49,0,0" TextWrapping="Wrap" Text="FP Indutivo mínimo" VerticalAlignment="Top" Width="154" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="191,70,0,0" 
+            TextWrapping="Wrap" 
+            Text="0" 
+            VerticalAlignment="Top" 
+            Width="50" Height="20" 
+            Background="{x:Null}" 
+            BorderBrush="{x:Null}" 
+            Foreground="White" 
+            TextAlignment="Center" 
+            FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="191,118,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="191,118,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="131,97,0,0" TextWrapping="Wrap" Text="Fator Capacitivo Mínimo" VerticalAlignment="Top" Width="170" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="191,167,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="131,146,0,0" TextWrapping="Wrap" Text="Tempo Sub FP" VerticalAlignment="Top" Width="170" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="230,510,0,0" TextWrapping="Wrap" Text="V" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="230,561,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="130" Margin="328,472,0,0" VerticalAlignment="Top" 
+            Width="200" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF262D33" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="110" Margin="338,482,0,0" VerticalAlignment="Top" 
+            Width="180" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF3C4044" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="402,510,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="350,489,0,0" TextWrapping="Wrap" Text="Sobrecorrente Gerador" VerticalAlignment="Top" Width="154" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="402,510,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <Rectangle 
+            HorizontalAlignment="Left" 
+            Height="20" Margin="402,561,0,0" VerticalAlignment="Top" 
+            Width="50" 
+            RadiusX="4" 
+            RadiusY="4" 
+            Fill="#FF2E3236" 
+            RenderTransformOrigin="0,0">
+
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Margin="402,561,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="342,540,0,0" TextWrapping="Wrap" Text="Tempo Sobrecorrente Gerador" VerticalAlignment="Top" Width="170" Foreground="White" TextAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="456,510,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="456,561,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" Foreground="White" FontSize="14" TextAlignment="Center"/>
+    </Grid>
+</UserControl>

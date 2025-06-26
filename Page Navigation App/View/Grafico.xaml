@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.Grafico"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="750"
+             d:DesignWidth="1052"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:GraficoVM />
+    </UserControl.DataContext>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <!-- Linha para botão Navegar -->
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="{Binding Mensagem}" FontSize="18" FontWeight="Bold"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
+            <Button Content="Conectar" Command="{Binding ConectarCommand}" Width="110" />
+            <Button Content="Desconectar" Command="{Binding DesconectarCommand}" Width="110" />
+            <CheckBox Content="Usar TCP" IsChecked="{Binding UsaTcp}" VerticalAlignment="Center" Margin="20,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock Text="Porta COM:" VerticalAlignment="Center" />
+            <ComboBox ItemsSource="{Binding PortasDisponiveis}"
+                  SelectedItem="{Binding PortaSelecionada}"
+                  Width="120"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock Text="BaudRate:" VerticalAlignment="Center"/>
+            <TextBox Width="100" Text="{Binding SetBaudRate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Aplicar" Command="{Binding AplicarBaudRateCommand}" Width="100"/>
+        </StackPanel>
+
+        <Grid Grid.Row="4" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Header="Dados Modbus" Margin="0,0,10,0">
+                <StackPanel Margin="10">
+                    <TextBlock Text="{Binding Id, StringFormat=ID: {0}}" />
+                    <TextBlock Text="{Binding BaudRate, StringFormat=BaudRate: {0}}" />
+                    <TextBlock Text="{Binding CanId, StringFormat=CAN ID: {0}}" />
+                    <TextBlock Text="{Binding RefTensao, StringFormat=Ref. Tensao: {0:F1} V}" />
+                    <TextBlock Text="{Binding Kp, StringFormat=KP: {0}}" />
+                    <TextBlock Text="{Binding Ki, StringFormat=KI: {0}}" />
+                    <TextBlock Text="{Binding Kd, StringFormat=KD: {0}}" />
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Header="Alarmes Ativos">
+                <ListBox ItemsSource="{Binding Alarmes}"/>
+            </GroupBox>
+        </Grid>
+
+        <StackPanel Grid.Row="5" Margin="0,20,0,0">
+            <TextBox Text="{Binding ParamRefTensao, UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding EnterPressedRefTensaoCommand}" />
+                </TextBox.InputBindings>
+            </TextBox>
+            <TextBox Text="{Binding ParamGanhoKP, UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding EnterPressedParamKPCommand}" />
+                </TextBox.InputBindings>
+            </TextBox>
+            <TextBox Text="{Binding ParamGanhoKI, UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding EnterPressedParamKICommand}" />
+                </TextBox.InputBindings>
+            </TextBox>
+        </StackPanel>
+
+        <!-- Botão para navegar para página 2 -->
+        <StackPanel Grid.Row="6" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Ir para Página 2" Width="150" Command="{Binding NavegarPage2Command}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

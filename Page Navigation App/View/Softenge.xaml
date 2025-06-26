@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.Softenge"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="750"
+             d:DesignWidth="1052"
+             Style="{StaticResource Page_Style}">
+
+
+    <UserControl.DataContext>
+        <vm:SoftengeVM />
+    </UserControl.DataContext>
+
+
+    <Grid Margin="15">
+
+
+
+        <Button 
+            Content="Conectar"      
+            Command="{Binding ConectarCommand}" 
+            Width="120" Height="30" Margin="211,125,691,565" />
+
+
+        <Button 
+            Content="Desconectar"   
+            Command="{Binding DesconectarCommand}" 
+            Width="110" Margin="76,125,836,565" Height="30" />
+
+
+        <CheckBox 
+            Content="Usar TCP"
+            IsChecked="{Binding UsaTcp}"
+            VerticalAlignment="Top" 
+            Margin="371,125,551,0" Width="100" Height="30" Foreground="White"/>
+
+        <TextBlock Text="Porta COM:" VerticalAlignment="Top" Width="100" Height="30" Margin="86,218,836,0" Foreground="White" />
+
+
+
+        <ComboBox ItemsSource="{Binding PortasDisponiveis}"
+          SelectedItem="{Binding PortaSelecionada}"
+          Width="120" Margin="211,205,691,458"/>
+
+        <Border CornerRadius="2,20,20,2" Margin="-2,-4,2,4">
+            <Rectangle HorizontalAlignment="Left" Height="110" Margin="88,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="204" Fill="White"/>
+        </Border>
+
+
+        <TextBox HorizontalAlignment="Left" Margin="55,295,0,0" TextWrapping="Wrap" Text="ID : 0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,314,0,0" TextWrapping="Wrap" Text="BaudRate: 0" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,334,0,0" TextWrapping="Wrap" Text="CAN ID: 0" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,354,0,0" TextWrapping="Wrap" Text="Ref. Tensão: 0.0 V" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,374,0,0" TextWrapping="Wrap" Text="KP: 0" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,394,0,0" TextWrapping="Wrap" Text="KI: 0" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBox HorizontalAlignment="Left" Margin="55,414,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="19"/>
+        <TextBlock Grid.Row="0" Text="{Binding Mensagem}" FontSize="18" FontWeight="Bold" Width="100" Height="50" Margin="65,40,857,630"/>
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</UserControl>

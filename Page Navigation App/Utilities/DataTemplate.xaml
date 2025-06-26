@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+                    xmlns:view="clr-namespace:Page_Navigation_App.View">
+
+    <DataTemplate DataType="{x:Type vm:HomeVM}">
+        <view:Home />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ConfiguracaoVM}">
+        <view:Configuracao />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ProtecaoVM}">
+        <view:Protecao />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ReguladorVM}">
+        <view:Regulador />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:EstabilidadeVM}">
+        <view:Estabilidade />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:GraficoVM}">
+        <view:Grafico />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:SettingVM}">
+        <view:Settings />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:SoftengeVM}">
+        <view:Softenge />
+    </DataTemplate>
+
+
+
+
+</ResourceDictionary>

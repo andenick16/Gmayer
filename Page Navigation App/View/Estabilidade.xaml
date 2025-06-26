@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.Estabilidade"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="750"
+             d:DesignWidth="1052"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:EstabilidadeVM />
+    </UserControl.DataContext>
+
+    <Grid Margin="15">
+
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" Height="59" Margin="302,195,0,0" Stroke="Black" VerticalAlignment="Top" Width="255" Fill="#FFE01B1B"/>
+        </Grid>
+
+    </Grid>
+</UserControl>
